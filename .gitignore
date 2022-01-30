@@ -1,3 +1,12 @@
+.vs/
+Debug/
+*.sln
+*.vcxproj
+*.filters
+*.vcxproj.filters
+*.user
+*.vcxproj.user
+
 # Prerequisites
 *.d
 
