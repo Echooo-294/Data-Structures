@@ -1,11 +1,4 @@
-/*
- * @Description：使用链表实现顺序表
- * @Author: Echooo
- * @Date: 2021-12-11
- * @Last Modified by:   Echooo
- * @Last Modified time: 2021-12-14
-*/
-#if 0
+//使用链表实现顺序表
 #include<iostream>
 using namespace std;
 template<typename Elem>
@@ -240,33 +233,4 @@ void LinkedList<Elem>::Print()
 		p = p->next;
 	}
 	cout << endl;
-	cout << "The size of the list:" << size << endl;
 }
-//示例实现
-int main()
-{
-	LinkedList<int> a;
-	bool work = 1;
-	while (work)
-	{
-		a.Print();
-		cout << "1.clear()" << '\t' << "2.getvalue(x)" << '\t' << "3.setpos(pos)" << '\t' << "4.prev()" << '\n' << "5.next()" << '\t' << "6.insert(x)" << '\t' << "7.remove(x)" << '\t' << "8.sort(seq)" << '\t' << "0.quit" << endl;
-		char choice;
-		cin >> choice;
-		switch (choice)
-		{
-		case'1': {a.Clear(); break; }
-		case'2': {int x; if (a.getValue(x)) { cout << "The value:" << x << endl; system("pause"); }break; }
-		case'3': {int x; cout << "Please input the index:"; cin >> x; a.setPos(x); break; }
-		case'4': {a.Prev(); break; }
-		case'5': {a.Next(); break; }
-		case'6': {int x; cout << "Please input the value:"; cin >> x; a.Insert(x); break; }
-		case'7': {int x; if (a.Remove(x)) { cout << "The value excluded is:" << x << endl; system("pause"); }break; }
-		case'8': {int seq; cout << "Please input the sequence(0 for increase order and 1 for decrease order):"; cin >> seq; a.Sort(seq); break; }
-		case'0': {work = 0; break; }
-		default:;
-		}
-		system("cls");
-	}
-}
-#endif

@@ -1,11 +1,5 @@
-/*
- * @Description：用数组实现队列
- * @Author: Echooo
- * @Date: 2021-12-14
- * @Last Modified by:   Echooo
- * @Last Modified time: 2022-01-01
- */
-#if 1
+// 用数组实现队列
+#if 0
 #include<iostream>
 #include<assert.h>
 using namespace std;
